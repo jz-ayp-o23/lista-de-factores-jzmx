@@ -1,15 +1,15 @@
 """
-Inserta el encabezado aquí y escribe tu código abajo
+Lista de factores
 """
 
-# Declaraciones
-CONSTANTE = valor
-
 # Entradas
-entrada = input()
+numero = int(input("¿De qué número desea los factores? "))
 
-# Proceso
-
+# Proceso 
+factores = []
+for factor in range(1, numero+1):
+    if numero % factor == 0:
+        factores.append(factor)
 
 # Salidas
-print(salida)
+print("Los factores de", numero, "son:", factores)
